@@ -39,7 +39,7 @@
     <picture class="hero-image">
       <source
         srcset="./images/image-intro-desktop.jpg"
-        media="(min-width: 760px)"
+        media="(min-width: 400px)"
       >
       <img 
         src="./images/image-intro-mobile.jpg" 
@@ -47,9 +47,20 @@
         class="hero-picture"
       >
     </picture>
-    <section class="hero-section section">
-      <h1>Humanizing your insurance.</h1>
+    <section class="hero-section">
+      <picture>
+        <source
+          srcset="./images/bg-pattern-intro-left-desktop.svg"
+          media="(min-width: 760px)"
+        >
+        <img 
+          src="./images/bg-pattern-intro-left-mobile.svg" 
+          alt=""
+          class="intro-left"
+        >
+      </picture>
 
+      <h1>Humanizing your insurance.</h1>
       <p class="hero-paragraph">
         Get your life insurance coverage easier and faster. 
         We blend our expertise and technology to help you find
@@ -57,40 +68,62 @@
         and your loved ones are protected.
       </p>
 
-      <button>View plans</button>
+      <div class="button-container">
+        <button>View plans</button>
+      </div>
+
+      <picture>
+        <source
+          srcset="./images/bg-pattern-intro-right-desktop.svg"
+          media="(min-width: 760px)"
+        >
+        <img 
+          src="./images/bg-pattern-intro-right-mobile.svg" 
+          alt=""
+          class="intro-right"
+        >
+      </picture>
     </section>
 
-    <section class="hero-subsection section">
+    <section class="hero-subsection">
       <h2>We’re different</h2>
 
-      <span>Snappy Process</span>
+      <div class="snappy">
+        <img src="/images/icon-snappy-process.svg" alt="snappy icon" class="snappy-icon">
+        <span>Snappy Process</span>
+        <p>
+          Our application process can be completed in minutes, not hours. 
+          Don’t get stuck filling in tedious forms.
+        </p>
+      </div>
 
-      <p>
-        Our application process can be completed in minutes, not hours. 
-        Don’t get stuck filling in tedious forms.
-      </p>
+      <div class="affordable">
+        <img src="/images/icon-affordable-prices.svg" alt="affordable icon" class="affordable-icon">
+        <span>Affordable Prices</span>
+        <p>
+          We don’t want you worrying about high monthly costs. Our prices may be low, 
+          but we still offer the best coverage possible.
+        </p>
+      </div>
 
-      <span>Affordable Prices</span>
-      <p>
-        We don’t want you worrying about high monthly costs. Our prices may be low, 
-        but we still offer the best coverage possible.
-      </p>
-
-      <span>People First</span>
-      <p>
-        Our plans aren’t full of conditions and clauses to prevent payouts.
-        We make sure you’re covered when you need it.
-      </p>
+      <div class="people">
+        <img src="/images/icon-people-first.svg" alt="people icon" class="people-icon">
+        <span>People First</span>
+        <p>
+          Our plans aren’t full of conditions and clauses to prevent payouts.
+          We make sure you’re covered when you need it.
+        </p>
+      </div>
     </section>
 
-    <section class="end-section section">
+    <section class="end-section">
       <h3>Find out more about how we work</h3>
 
       <button>How we work</button>
     </section>
   </main>
 
-  <footer class="footer section">
+  <footer class="footer">
     Our company
 
     How we work
