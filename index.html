@@ -36,44 +36,61 @@
   </header>
 
   <main>
-  
-    <h1>Humanizing your insurance.</h1>
+    <picture class="hero-image">
+      <source
+        srcset="./images/image-intro-desktop.jpg"
+        media="(min-width: 760px)"
+      >
+      <img 
+        src="./images/image-intro-mobile.jpg" 
+        alt="hero-image"
+        class="hero-picture"
+      >
+    </picture>
+    <section class="hero-section section">
+      <h1>Humanizing your insurance.</h1>
 
-    <p>
-      Get your life insurance coverage easier and faster. 
-      We blend our expertise and technology to help you find
-      the plan that’s right for you. Ensure you 
-      and your loved ones are protected.
-    </p>
+      <p class="hero-paragraph">
+        Get your life insurance coverage easier and faster. 
+        We blend our expertise and technology to help you find
+        the plan that’s right for you. Ensure you 
+        and your loved ones are protected.
+      </p>
 
-    <button>View plans</button>
+      <button>View plans</button>
+    </section>
 
-    <h2>We’re different</h2>
+    <section class="hero-subsection section">
+      <h2>We’re different</h2>
 
-    <span>Snappy Process</span>
+      <span>Snappy Process</span>
 
-    <p>
-      Our application process can be completed in minutes, not hours. 
-      Don’t get stuck filling in tedious forms.
-    </p>
+      <p>
+        Our application process can be completed in minutes, not hours. 
+        Don’t get stuck filling in tedious forms.
+      </p>
 
-    <span>Affordable Prices</span>
-    <p>
-      We don’t want you worrying about high monthly costs. Our prices may be low, 
-      but we still offer the best coverage possible.
-    </p>
+      <span>Affordable Prices</span>
+      <p>
+        We don’t want you worrying about high monthly costs. Our prices may be low, 
+        but we still offer the best coverage possible.
+      </p>
 
-    <span>People First</span>
-    <p>
-      Our plans aren’t full of conditions and clauses to prevent payouts.
-      We make sure you’re covered when you need it.
-    </p>
-    Find out more about how we work
+      <span>People First</span>
+      <p>
+        Our plans aren’t full of conditions and clauses to prevent payouts.
+        We make sure you’re covered when you need it.
+      </p>
+    </section>
 
-    How we work
+    <section class="end-section section">
+      <h3>Find out more about how we work</h3>
+
+      <button>How we work</button>
+    </section>
   </main>
 
-  <footer>
+  <footer class="footer section">
     Our company
 
     How we work
@@ -100,5 +117,6 @@
     Press
     Licenses
   </footer>
+  <script src="./index.js"></script>
 </body>
 </html>
