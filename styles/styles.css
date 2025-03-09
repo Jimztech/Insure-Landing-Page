@@ -67,6 +67,9 @@ header {
     min-height: 100vh;
     width: 100%;
     background-color: var(--VeryDarkViolet);
+    background-image: url("../images/bg-pattern-mobile-nav.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,7 +103,7 @@ main {
     position: relative;
 }
 .hero-subsection {
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
     position: relative;
 }
 
@@ -119,6 +122,10 @@ main {
         right: 0;
         bottom: -170px;
     }
+    .end-icon {
+        position: absolute;
+        right: 30px;
+    }
 }
 
 /* Text styling */
@@ -128,6 +135,10 @@ h1, h2, h3, p {
 span {
     display: block;
     text-align: center;
+    font-size: 1.8rem;
+}
+.span-p {
+    color: var(--GrayishBlue);
 }
 h1 {
     font-size: 2.8rem;
@@ -136,9 +147,17 @@ h1 {
 h2 {
     font-size: 2.6rem;
 }
+h3 {
+    font-size: 2.2rem;
+    color: var(--VeryLightGrey);
+}
 .hero-paragraph {
     color: var(--VeryLightGrey);
     opacity: 0.7;
+}
+footer > div > p {
+    text-transform: uppercase;
+    color: var(--DarkViolet);
 }
 
 /* Button styling */
@@ -155,4 +174,57 @@ button {
     opacity: 0.7;
     border: 2px solid var(--VeryLightGrey);
     text-transform: uppercase;
+}
+
+
+/* heroSubsection styling */
+.some-icon {
+    display: block;
+    text-align: center;
+}
+.snappy, .affordable, .people {
+    padding: 2rem 0;
+}
+
+
+/* endSection styling */
+.end-section {
+    padding: 2rem;
+    position: relative;
+}
+.sub-part {
+    background-color: var(--DarkViolet);
+    padding: 2rem;
+}
+
+
+/* footer styling */
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    position: relative;
+    background-color: var(--VeryLightGrey);
+}
+.footer-image {
+    position: absolute;
+    top: 0;
+}
+.logo-container, .icon-container {
+    text-align: center;
+}
+.logo-container {
+    padding: 1rem;
+}
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.first-container, .second-container, .third-container, .fourth-container {
+    padding: 1.5rem;
+}
+.head-footer {
+    padding: 1rem;
+    color: var(--GrayishBlue);
 }

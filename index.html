@@ -51,7 +51,7 @@
       <picture>
         <source
           srcset="./images/bg-pattern-intro-left-desktop.svg"
-          media="(min-width: 760px)"
+          media="(min-width: 700px)"
         >
         <img 
           src="./images/bg-pattern-intro-left-mobile.svg" 
@@ -75,7 +75,7 @@
       <picture>
         <source
           srcset="./images/bg-pattern-intro-right-desktop.svg"
-          media="(min-width: 760px)"
+          media="(min-width: 700px)"
         >
         <img 
           src="./images/bg-pattern-intro-right-mobile.svg" 
@@ -88,67 +88,120 @@
     <section class="hero-subsection">
       <h2>We’re different</h2>
 
-      <div class="snappy">
-        <img src="/images/icon-snappy-process.svg" alt="snappy icon" class="snappy-icon">
-        <span>Snappy Process</span>
-        <p>
-          Our application process can be completed in minutes, not hours. 
-          Don’t get stuck filling in tedious forms.
-        </p>
-      </div>
+      <section class="inner-section">
+        <div class="snappy">
+          <div class="some-icon">
+            <img src="/images/icon-snappy-process.svg" alt="snappy icon" class="snappy-icon">
+          </div>
+          <span>Snappy Process</span>
+          <p class="span-p">
+            Our application process can be completed in minutes, not hours. 
+            Don’t get stuck filling in tedious forms.
+          </p>
+        </div>
 
-      <div class="affordable">
-        <img src="/images/icon-affordable-prices.svg" alt="affordable icon" class="affordable-icon">
-        <span>Affordable Prices</span>
-        <p>
-          We don’t want you worrying about high monthly costs. Our prices may be low, 
-          but we still offer the best coverage possible.
-        </p>
-      </div>
+        <div class="affordable">
+          <div class="some-icon">
+            <img src="/images/icon-affordable-prices.svg" alt="affordable icon" class="affordable-icon">
+          </div>
+          <span>Affordable Prices</span>
+          <p class="span-p">
+            We don’t want you worrying about high monthly costs. Our prices may be low, 
+            but we still offer the best coverage possible.
+          </p>
+        </div>
 
-      <div class="people">
-        <img src="/images/icon-people-first.svg" alt="people icon" class="people-icon">
-        <span>People First</span>
-        <p>
-          Our plans aren’t full of conditions and clauses to prevent payouts.
-          We make sure you’re covered when you need it.
-        </p>
-      </div>
+        <div class="people">
+          <div class="some-icon">
+            <img src="/images/icon-people-first.svg" alt="people icon" class="people-icon">
+          </div>
+          <span>People First</span>
+          <p class="span-p">
+            Our plans aren’t full of conditions and clauses to prevent payouts.
+            We make sure you’re covered when you need it.
+          </p>
+        </div>
+      </section>
+
     </section>
 
     <section class="end-section">
-      <h3>Find out more about how we work</h3>
+      <picture>
+        <source
+          srcset="./images/bg-pattern-intro-right-desktop.svg"
+          media="(min-width: 700px)"
+        >
 
-      <button>How we work</button>
+        <img 
+          src="./images/bg-pattern-intro-right-mobile.svg" 
+          alt=""
+          class="end-icon"  
+        >
+      </picture>
+      <div class="sub-part">
+        <h3>Find out more about how we work</h3>
+
+        <div class="button-container">
+          <button class="end-button">How we work</button>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    Our company
+    <div class="logo-container">
+      <img src="./images/logo.svg" alt="footer logo" class="footer-logo">
+    </div>
+    <picture>
+      <source
+        srcset="./images/bg-pattern-footer-desktop.svg"
+        media="min-width: 700px"
+      >
+      <img 
+        src="./images/bg-pattern-footer-mobile.svg" 
+        alt="footer image"
+        class="footer-image"
+      >
+    </picture>
+    <div class="icon-container">
+      <img src="./images/icon-facebook.svg" alt="facebook icon">
+      <img src="./images/icon-twitter.svg" alt="twitter icon">
+      <img src="./images/icon-pinterest.svg" alt="pinterest icon">
+      <img src="./images/icon-instagram.svg" alt="instagram icon">
+    </div>
+    <div class="first-container">
+      <p class="head-footer">Our company</p>
 
-    How we work
-    Why Insure?
-    View plans
-    Reviews
+      <p>How we work</p>
+      <p>Why Insure?</p>
+      <p>View plans</p>
+      <p>Reviews</p>
+    </div>
 
-    Help me
+    <div class="second-container">
+      <p class="head-footer">Help me</p>
 
-    FAQ
-    Terms of use
-    Privacy policy
-    Cookies
+      <p>FAQ</p>
+      <p>Terms of use</p>
+      <p>Privacy policy</p>
+      <p>Cookies</p>
+    </div>
 
-    Contact
+    <div class="third-container">
+      <p class="head-footer">Contact</p>
 
-    Sales
-    Support
-    Live chat
+      <p>Sales</p>
+      <p>Support</p>
+      <p>Live chat</p>
+    </div>
 
-    Others
+    <div class="fourth-container">
+      <p class="head-footer">Others</p>
 
-    Careers
-    Press
-    Licenses
+      <p>Careers</p>
+      <p>Press</p>
+      <p>Licenses</p>
+    </div>
   </footer>
   <script src="./index.js"></script>
 </body>
