@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 img, button {
     display: inline-block;
     max-width: 100%;
@@ -49,6 +52,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: var(--VeryLightGrey);
 }
 .open-menu {
@@ -56,8 +60,7 @@ header {
     position: relative;
     right: 25px;
     */
-    position: fixed;
-    right: 0.5rem;
+    position: relative;
     z-index: 1000;
 }
 .nav-links {
@@ -76,6 +79,7 @@ header {
     gap: 1.5rem;
     padding: 3rem 2rem;
     z-index: 100;
+    transition: 0.3s ease;
     cursor: pointer;
     display: none;
 }
@@ -93,7 +97,7 @@ header {
 
 
 /* Main section styling */
-main {
+.main {
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -209,6 +213,7 @@ footer {
 .footer-image {
     position: absolute;
     top: 0;
+    left: -20px;
 }
 .logo-container, .icon-container {
     text-align: center;
@@ -227,4 +232,24 @@ footer {
 .head-footer {
     padding: 1rem;
     color: var(--GrayishBlue);
+}
+
+
+/* Desktop view */
+@media (min-width: 900px) {
+    header {
+        padding: 1rem 6rem;
+    }
+    .open-menu {
+        display: none;
+    }
+    .nav-links {
+        all: unset;
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+    }
+    .view-plans {
+        all: unset;
+    }
 }
