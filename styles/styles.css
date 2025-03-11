@@ -101,6 +101,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
 }
+
 .hero-section {
     background-color: var(--DarkViolet);
     padding: 3rem 1rem;
@@ -204,8 +205,12 @@ button {
 
 /* footer styling */
 footer {
+    /*
     display: grid;
     grid-template-columns: 1fr;
+    */
+    display: flex;
+    flex-direction: column;
     padding: 3rem;
     position: relative;
     background-color: var(--VeryLightGrey);
@@ -259,6 +264,11 @@ footer {
        z-index: 2;
        left: 600px;
        top: 100px;
+    }
+    .head-line {
+        width: 10%;
+        border-top: 1px solid var(--GrayishBlue);
+        padding: 1.5rem;
     }
     .hero-section {
         position: relative;
@@ -334,5 +344,26 @@ footer {
         position: absolute;
         z-index: 2;
         right: 100px;
+    }
+
+
+    /* footer styling */
+    .flex-logo {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 3rem;
+    }
+    .flex-notes {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 2rem;
+    }
+    .icon-container {
+        all: unset;
+    }
+    .footer-line {
+        width: 90%;
+        border-top: 1px solid var(--GrayishBlue);
+        margin: 0 4rem;
     }
 }
