@@ -258,17 +258,20 @@ footer {
        position: absolute;
        z-index: 2;
        left: 600px;
+       top: 100px;
     }
     .hero-section {
         position: relative;
         z-index: 1; 
-        padding: 6rem 4rem;
+        padding: 10rem 6rem 6rem 6rem;  /* previously 8rem 6rem*/
     }
     .intro-left, .intro-right {
         position: absolute;
     }
     .intro-left {
         z-index: 2;
+        bottom: -300px;
+        left: 0;
     }
     .intro-right {
         z-index: 4;
@@ -283,12 +286,20 @@ footer {
     }
 
     /* text styling which would be adjusted later with clamps */
-    h1, .hero-paragraph{
+    h1, .hero-paragraph, h3{
         text-align: left;
     }
     h1 {
         font-size: 4rem;
         max-width: 600px;
+        line-height: 1;
+    }
+    h2 {
+        font-size: 3.8rem;
+    }
+    h3 {
+        font-size: 3.2rem;
+        max-width: 500px;
         line-height: 1;
     }
     .hero-paragraph {
@@ -298,5 +309,30 @@ footer {
     /* hero subsection */
     .hero-subsection {
         position: relative;
+        padding: 15rem 6rem 6rem 6rem;
+    }
+    .hero-subsection > h2, .span-p, span, .some-icon {
+        text-align: left;
+    }
+    .inner-section {
+        display: flex;
+        gap: 2rem;
+    }
+
+    /* end section */
+    .end-section {
+        padding: 6rem;
+    }
+    .sub-part {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        padding: 4.7rem;
+    }
+    .end-icon {
+        position: absolute;
+        z-index: 2;
+        right: 100px;
     }
 }
