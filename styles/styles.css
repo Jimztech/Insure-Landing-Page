@@ -22,7 +22,7 @@ body {
     font-family: "Karla", sans-serif;
     font-size: 1rem;
     position: relative;
-    z-index: auto;
+    z-index: auto; /* position 1 */
 }
 h1, h2, h3, span {
     font-family: "DM Serif Display";
@@ -51,7 +51,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 10; /* position 2 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: var(--VeryLightGrey);
 }
@@ -61,7 +61,7 @@ header {
     right: 25px;
     */
     position: relative;
-    z-index: 1000;
+    z-index: 1000;       /* position 4 */
 }
 .nav-links {
     position: absolute;
@@ -78,7 +78,7 @@ header {
     align-items: center;
     gap: 1.5rem;
     padding: 3rem 2rem;
-    z-index: 100;
+    z-index: 100;       /* position 3*/
     transition: 0.3s ease;
     cursor: pointer;
     display: none;
@@ -251,5 +251,52 @@ footer {
     }
     .view-plans {
         all: unset;
+    }
+
+    /* Hero styling */
+    .hero-picture {
+       position: absolute;
+       z-index: 2;
+       left: 600px;
+    }
+    .hero-section {
+        position: relative;
+        z-index: 1; 
+        padding: 6rem 4rem;
+    }
+    .intro-left, .intro-right {
+        position: absolute;
+    }
+    .intro-left {
+        z-index: 2;
+    }
+    .intro-right {
+        z-index: 4;
+        right: 0;
+        top: 0;
+    }
+    .button-container {
+        all: unset;
+        display: flex;
+        justify-content: flex-start;
+        padding: 2rem 0;
+    }
+
+    /* text styling which would be adjusted later with clamps */
+    h1, .hero-paragraph{
+        text-align: left;
+    }
+    h1 {
+        font-size: 4rem;
+        max-width: 600px;
+        line-height: 1;
+    }
+    .hero-paragraph {
+        max-width: 500px;
+    }
+
+    /* hero subsection */
+    .hero-subsection {
+        position: relative;
     }
 }
