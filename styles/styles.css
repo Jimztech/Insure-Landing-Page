@@ -254,8 +254,22 @@ footer {
         list-style: none;
         gap: 2rem;
     }
+    .nav-links a:hover {
+        color: var(--DarkViolet);
+    }
     .view-plans {
         all: unset;
+        border: 2px solid var(--DarkViolet);
+        padding: 0 1rem;
+    }
+    .view-plans:hover {
+        background-color: var(--DarkViolet);
+    }
+    .view-plans a {
+        color: var(--DarkViolet);
+    }
+    .view-plans a:hover {
+        color: var(--VeryLightGrey);
     }
 
     /* Hero styling */
@@ -293,6 +307,10 @@ footer {
         display: flex;
         justify-content: flex-start;
         padding: 2rem 0;
+    }
+    .view:hover {
+        background-color: var(--VeryLightGrey);
+        color: var(--VeryDarkViolet);
     }
 
     /* text styling which would be adjusted later with clamps */
@@ -358,6 +376,16 @@ footer {
         justify-content: space-between;
         padding: 0.5rem 2rem;
     }
+    .flex-notes > div > p {
+        text-align: left;
+        text-transform: uppercase;
+        padding: 0.5rem 2rem;
+        cursor: pointer;
+        transition: text-decoration 0.3s ease;
+    }
+    .flex-notes > div > p:hover {
+        text-decoration: underline;
+    }
     .icon-container {
         all: unset;
     }
@@ -366,4 +394,14 @@ footer {
         border-top: 1px solid var(--GrayishBlue);
         margin: 0 4rem;
     }
+}
+@media (min-width: 700px) and (max-width: 899px) {
+    .hero-section {
+        position: relative;
+        z-index: 1; 
+    }
+    .hero-picture {
+        position: absolute;
+        z-index: 2;
+     }
 }
