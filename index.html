@@ -37,10 +37,21 @@
 
   <main class="main">
     <picture class="hero-image">
-      <source
-        srcset="./images/image-intro-desktop.jpg"
-        media="(min-width: 385px)"
+      <source 
+        srcset="./images/image-intro-desktop.jpg" 
+        media="(min-width: 385px) and (max-width: 600px)"
       >
+
+      <source 
+        srcset="./images/image-intro-mobile.jpg" 
+        media="(min-width: 601px) and (max-width: 899px)"
+      >
+
+      <source 
+        srcset="./images/image-intro-desktop.jpg" 
+        media="(min-width: 900px)"
+      >
+
       <img 
         src="./images/image-intro-mobile.jpg" 
         alt="hero-image"
@@ -69,7 +80,7 @@
         and your loved ones are protected.
       </p>
 
-      <div class="button-container">
+      <div class="button-container hero-button">
         <button class="view">View plans</button>
       </div>
 
@@ -130,7 +141,12 @@
       <picture>
         <source
           srcset="./images/bg-pattern-how-we-work-desktop.svg"
-          media="(min-width: 700px)"
+          media="(min-width: 900px)"
+        >
+
+        <source 
+          srcset="./images/bg-pattern-how-we-work-mobile.svg" 
+          media="(min-width: 601px) and (max-width: 899px)"
         >
 
         <img 
@@ -142,7 +158,7 @@
       <div class="sub-part">
         <h3>Find out more about how we work</h3>
 
-        <div class="button-container hero-button">
+        <div class="button-container">
           <button class="end-button">How we work</button>
         </div>
       </div>
